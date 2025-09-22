@@ -21,3 +21,11 @@ Original can be found and downloaded [here](https://forum.cfx.re/t/release-luxar
 | `UP ARROW`   | Toggle on/off secondary emergency vehicle siren |  
 | `LEFT ARROW` | Cycle main siren back 1 siren         |  
 | `RIGHT ARROW`| Cycle main siren forward 1 siren     |  
+
+## What's changed?
+```
+- Better code optimizations probably
+- "light reminder" that beeps every 7 seconds (can be toggled off in client.lua, or by using the `/lr` command)
+- Ability to cycle the main siren forwards or backwards with arrow keys
+- If the sirens are on, getting out of the vehicle dirver seat will disable them automatically
+```
