@@ -70,6 +70,23 @@ local function CleanupSounds()
     cleanupSoundTable(state_airmanu, snd_airmanu)
 end
 
+CreateThread(function()
+    while true do
+        local ped = PlayerPedId()
+        Wait(1000)
+
+        SetAudioFlag("DisableFlightMusic", true)
+        SetAudioFlag("PoliceScannerDisabled", true)
+
+        StartAudioScene("CHARACTER_CHANGE_IN_SKY_SCENE")
+        StartAudioScene("DLC_MPHEIST_TRANSITION_TO_APT_FADE_IN_RADIO_SCENE")
+        StartAudioScene("FBI_HEIST_H5_MUTE_AMBIENCE_SCENE")
+        DistantCopCarSirens(false)
+
+        OverrideReactionToVehicleSiren(true, 1)
+    end
+end)
+
 function ToggleIndicator(veh, newstate)
     if DoesEntityExist(veh) and not IsEntityDead(veh) then
         local leftOn, rightOn = false, false
