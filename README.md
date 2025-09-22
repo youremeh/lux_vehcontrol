@@ -25,7 +25,13 @@ Original can be found and downloaded [here](https://forum.cfx.re/t/release-luxar
 ## What's changed?
 ```
 - Better code optimizations probably
-- "light reminder" that beeps every 7 seconds (can be toggled off in client.lua, or by using the `/lr` command)
+- "light reminder" that beeps every 7 seconds when lights are on
+- Light reminder can be turned off via `/lr` or disabled in client.lua
 - Ability to cycle the main siren forwards or backwards with arrow keys
 - If the sirens are on, getting out of the vehicle dirver seat will disable them automatically
+- Disables distant siren sounds, fixes multiple issues
+- Starts different "blank" audios to prevent/stop ghost sirens (same with above)
+
+- Uses new native "OverrideReactionToVehicleSiren" to move locals out the way
+(see this: https://docs.fivem.net/natives/?_0x3F3EB3F7 for more info)
 ```
