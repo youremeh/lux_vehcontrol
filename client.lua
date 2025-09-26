@@ -22,7 +22,7 @@ local snd_airmanu = {}
 local eModelsWithFireSrn = { 'gbfirevoyager' }
 local eModelsWithPcall = { 'sandbulance' }
 
-local useLR = true -- default: true = on
+local useLR = false -- default: false = off
 local lrTime = 7 -- seconds
 RegisterCommand('lr', function() useLR = not useLR end)
 
