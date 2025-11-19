@@ -9,5 +9,11 @@ files {
     'sounds/*.ogg'
 }
 
+shared_scripts {
+    '@ox_lib/init.lua'
+}
+
 client_script 'client.lua'
 server_script 'server.lua'
+
+dependency 'ox_lib'
